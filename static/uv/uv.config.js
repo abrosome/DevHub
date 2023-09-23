@@ -15,16 +15,18 @@ fetch("https://cdn.jsdelivr.net/npm/eruda").then(r => r.text()).then(r => eval(r
 setTimeout(() => {
   eruda.init()
 
-if (document.getElementById("eruda").shadowRoot) {
-  const div = document.getElementById("eruda").shadowRoot.querySelector(".eruda-entry-btn");
-  if (div) {
-    div.style.left = "auto";
-    div.style.right = "0";
-    div.style.top = "auto";
-    div.style.bottom = "0";
-    div.style.position = "fixed";
+erudaInt = setInterval(() => {
+  if (document.getElementById("eruda").shadowRoot) {
+    const div = document.getElementById("eruda").shadowRoot.querySelector(".eruda-entry-btn");
+    if (div) {
+      div.style.left = "auto";
+      div.style.right = "0";
+      div.style.top = "auto";
+      div.style.bottom = "0";
+      div.style.position = "fixed";
+    }
   }
-}
-
 }, 100);
+
+}, 250);
 

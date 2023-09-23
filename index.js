@@ -6,6 +6,6 @@ const port = 80;
 
 app.use(express.static(path.join(__dirname, 'static')));
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const server = app.listen(port, () => {
+  console.log(`DevHub is running on port ${port}`);
 });

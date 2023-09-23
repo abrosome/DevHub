@@ -1,4 +1,10 @@
 {
+  "name": "devhub",
+  "description": "devhub pretty cool fr",
+  "author": "devTech",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": "*",
     "path": "*"
